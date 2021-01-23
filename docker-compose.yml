@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  api:
+    tty: true
+    build:
+      context: . 
+    volumes:
+      - type: bind
+        source: .
+        target: /go/src/github.com/hgkcho/realWorldHttp
+    ports:
+      - 8888:8888
+      - 18888:18888
+
