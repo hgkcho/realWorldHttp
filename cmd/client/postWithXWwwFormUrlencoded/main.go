@@ -7,6 +7,8 @@ import (
 	"net/url"
 )
 
+// x-www-form-urlencoded形式のPOSTメソッドの送信
+// curl -d test=value http://localhost:8888
 func main() {
 	values := url.Values{
 		"test": {"value"},
